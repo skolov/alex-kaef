@@ -6,9 +6,275 @@ block title
     | Главная
 
 block content
-    h1.title1 TEST
-    +title('Главная страница')
-    img(src='~images/lorem-img.png', width='300px')
-    +icon('clock', 100, 100)
+    link(href='https://fonts.googleapis.com/css?family=Montserrat:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&display=swap&subset=cyrillic,cyrillic-ext,latin-ext' rel='stylesheet')
+    link(rel='preconnect' href='https://fonts.googleapis.com')
+    link(rel='preconnect' href='https://fonts.gstatic.com' crossorigin)
+    link(href='https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap' rel='stylesheet')
+    link( href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet")
+    link(href="http://fonts.cdnfonts.com/css/signpainter" rel="stylesheet")
+    link(href="http://fonts.cdnfonts.com/css/nimbus-mono" rel="stylesheet")
+
+    link(rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css")
     
-    span= data.example.test
+    link(href="http://fonts.cdnfonts.com/css/modern-typewriter" rel="stylesheet")
+
+
+    link(rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css")
+    script(src="https://unpkg.com/swiper@8/swiper-bundle.min.js")
+    
+    script(src="http://e14aaeb709f7cde1ae68-a1d0a134a31b545b257b15f8a8ba5726.r70.cf3.rackcdn.com/projects/31432/1427815464209-bf74131a7528d0ea5ce8c0710f530bb5/1280x720.mp4" type="video/mp4")
+    script(src="https://code.jquery.com/jquery-1.8.3.js")
+
+    header(class='header')
+
+        div(class='header__logo logo_white')
+            img(class='logo__img' src='~images/лого прессиндекс.svg', alt='logo')
+            span(class='logo__text logo__text_white') Пресс<br>Индекс
+
+        div(class='menu' id='navigation')
+            nav
+                ul(class='nav')
+                    li(class='nav__item nav__item_white list')
+                        a(class='list__item list__item_white' href='/') Услуги
+                    li(class='nav__item nav__item_white list')
+                        a(class='list__item list__item_white' href='/') Возможности
+
+            div(class='feedback')    
+                div(class='info-call')
+                    span(class='info-call__text') Ваш менеджер
+                    p(class='info-call__tel tel')
+                        a(class='tel__link' href='/') +7 (495) 374 44 55
+                div(class='feedback__button button')
+                    a(class='button__link' href='/')
+                        span(class='button__span') Приобрести
+                        img(class='button__icon' src='~images/Arrow.svg', width='22px')
+                        i(class="fa fa-spinner fa-spin")
+
+        div(class='switch')
+            a(class='switch__link' href='javascript:void(0);' onclick='myFunction()' )
+                img(src='~images/bars1.svg', alt='menu')
+
+    section(class='intro')
+        div(class='image1')
+            img(src="~images/Rectangle 18.png", alt="")
+        div(class='image2')
+            img(src="~images/~images/Rectangle 37.png", alt="")
+        div(class='image3')
+            img(src="~images/~images/пи 1.png", alt="")
+        span(class='transform-text') Система мониторинга
+        div(class='intro__info')
+            h1(class='intro__title') Пресс<br>Индекс
+            p(class='intro__text') Самые обсуждаемые темы в <b>СМИ, соцсетях и telegram</b> в режиме реального времени в одном сервисе 
+            div(class='button')
+                a(class='button__link' href='/')
+                    span(class='button__span') Приобрести
+                    img(class='button__icon' src='~images/Arrow.svg', width='22px')
+        div(class='intro__news')
+            div(class="slider-news")
+                div(class='slider-news__item')
+                    img(src="~images/Rectangle 19.png", alt="", width="609px")
+                    p(class="slider-news__data") 04   /   02   /   2020
+                    p(class="slider-news__title") Новые возможности системы мониторинга
+                    p(class="slider-news__text") Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. 
+                div(class='slider-news__item')
+                    img(src="~images/Rectangle 19.png", alt="", width="609px")
+                    p(class="slider-news__data") 05   /   02   /   2020
+                    p(class="slider-news__title") Новые возможности системы мониторинга
+                    p(class="slider-news__text") Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. 
+                div(class='slider-news__item')
+                    img(src="~images/Rectangle 19.png", alt="", width="609px")
+                    p(class="slider-news__data") 06   /   02   /   2020
+                    p(class="slider-news__title") Новые возможности системы мониторинга
+                    p(class="slider-news__text") Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. 
+                div(class='slider-news__item')
+                    img(src="~images/Rectangle 19.png", alt="", width="609px")
+                    p(class="slider-news__data") 07   /   02   /   2020
+                    p(class="slider-news__title") Новые возможности системы мониторинга
+                    p(class="slider-news__text") Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. 
+                div(class="pagination")
+                    a(id="next") &#8594;
+                    a(id="previous") &#8592;
+            div(class='how-work')
+                p(class='how-work__title') Как работает система?
+                a(class='how-work__link' href='/') Описание разных плюшек
+                    img(src="~images/Arrow.svg", alt="")
+
+    section(class='slider')
+        div(class='swiper mySwiper')
+            div(class='swiper-wrapper')
+                div(class='swiper-slide') 
+                    img(src="~images/Mask Group.png", alt="")
+                    div(class="swiper-slide__text")
+                        p(class="swiper__title") Мониторинг сайта
+                        hr(class="swiper__hr")
+                        p(class="swiper__text") Узнайте первым о новых и измененных страницах на сайтах конкурентов. Получайте оповещения в случае изменения цен или публикации акций.
+                div(class='swiper-slide') 
+                    img(src="~images/Mask Group (1).png", alt="")
+                    div(class="swiper-slide__text")
+                        p(class="swiper__title") Мониторинг социальных сетей
+                        hr(class="swiper__hr")
+                        p(class="swiper__text") Будьте в курсе, что пишут ваши конкуренты на своих страницах в социальных сетях.
+                div(class='swiper-slide') 
+                    img(src="~images/Mask Group (2).png", alt="")
+                    div(class="swiper-slide__text")
+                        p(class="swiper__title") Мониторинг упоминаний
+                        hr(class="swiper__hr")
+                        p(class="swiper__text") Отслеживайте упоминания о конкурентах в СМИ и социальных сетях. Система автоматически определяет тональность комментариев и реакцию аудитории.
+                div(class='swiper-slide') 
+                    img(src="~images/Mask Group.png", alt="")
+                    div(class="swiper-slide__text")
+                        p(class="swiper__title") Мониторинг сайта
+                        hr(class="swiper__hr")
+                        p(class="swiper__text") Узнайте первым о новых и измененных страницах на сайтах конкурентов. Получайте оповещения в случае изменения цен или публикации акций.
+            div(class='swiper-button-prev')
+            div(class='swiper-button-next')
+    
+    section(class='free-access')
+        h2(class='free-access__title') Бесплатный<br>доступ
+        p(class='free-access__text') Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus
+        input(class='free-access__input' type="text" placeholder='Введите ваш номер телефона')
+        div(class='free-access__button button')
+            a(class='button__link' href='/')
+                span(class='button__span') Приобрести
+                img(class='button__icon' src='~images/Arrow.svg', width='22px')
+
+    section(class='functionality')
+        div(class='one')
+            h2(class='functionality__title') Функциональность
+            p(class='functionality__text') Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet.
+            div(class='functionality__tab tabs-container')
+                ul(class='tabs')
+                    li(class='active')
+                        a добавление конкурента
+                    li
+                        a мониторинг конкурента
+                    li
+                        a список конкурентов
+        div(class='two')
+            div(class='tabs-content')
+                div(class='tabs-panel active' data-index="0")
+                    img(src="~images/Group 74.png", alt="")
+                div(class='tabs-panel' data-index="1")
+                    img(src="~images/Group 76.png", alt="")
+                div(class='tabs-panel' data-index="2")
+                    img(src="~images/Group 78.png", alt="")
+
+    section(class='video-content')
+        div(class='video-content__video')
+            //- iframe(class='video' id='video1' src="https://www.youtube.com/embed/83MwYH8kw7I") 
+            img(src='~images/Rectangle 27.png' onclick='show_video();' class='img_video')
+            div(id='modal_form')
+                span(class="modal_close") 123
+                iframe(class='video' id='video1' src="https://www.youtube.com/embed/83MwYH8kw7I") 
+            div(id='overlay')
+        div(class="playpause" id='play')
+        div(class='video-content__text')
+            p И еще много уникальных возможностей с уникальным текстом
+            p Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet.
+
+    section(class='cards')
+        div(class='cards__item')
+            img(class='cards__icon' src="~images/podium (1) 2.png", alt="")
+            h2(class='cards__title') Мониторинг<br>в реальном времени
+            hr
+            p(class='cards__texte') Будьте в курсе, что пишут ваши конкуренты на своих страницах в социальных сетях.
+        div(class='cards__item')
+            img(class='cards__icon' src="~images/podium (1) 2.png", alt="")
+            h2(class='cards__title') Отсутствие лимитов<br>на обработку данных
+            hr
+            p(class='cards__texte') Будьте в курсе, что пишут ваши конкуренты на своих страницах в социальных сетях.
+        div(class='cards__item')
+            img(class='cards__icon' src="~images/podium (1) 2.png", alt="")
+            h2(class='cards__title') Преднастроенные<br>графики и отчеты
+            hr
+            p(class='cards__texte') Будьте в курсе, что пишут ваши конкуренты на своих страницах в социальных сетях.
+        div(class='cards__item')
+            img(class='cards__icon' src="~images/podium (1) 2.png", alt="")
+            h2(class='cards__title') Оповещения на смартфон<br>или по электронной почте
+            hr
+            p(class='cards__texte') Будьте в курсе, что пишут ваши конкуренты на своих страницах в социальных сетях.
+        div(class='cards__item')
+            img(class='cards__icon' src="~images/podium (1) 2.png", alt="")
+            h2(class='cards__title') Экспорт данных<br>в Word, Excel, PDF, HTML
+            hr
+            p(class='cards__texte') Будьте в курсе, что пишут ваши конкуренты на своих страницах в социальных сетях.
+        div(class='cards__item')
+            img(class='cards__icon' src="~images/podium (1) 2.png", alt="")
+            h2(class='cards__title') Кастомизация отчетов<br>по запросу пользователя
+
+            hr
+            p(class='cards__texte') Будьте в курсе, что пишут ваши конкуренты на своих страницах в социальных сетях.
+
+    footer(class='footer')
+        div(class='footer__logo logo_blue')
+            img(class='logo__img' src='~images/1.svg', alt='logo')
+            span(class='logo__text logo__text_blue') Пресс<br>Индекс
+        div(class='footer__menu')
+            ul(class='footer__nav')
+                li(class='nav__item nav__item_blue list')
+                    a(class='list__item list__item_blue' href='/') Услуги
+                li(class='nav__item nav__item_blue list')
+                    a(class='list__item list__item_blue' href='/') Отзывы
+                li(class='nav__item nav__item_blue list')
+                    a(class='list__item list__item_blue' href='/') API
+                li(class='nav__item nav__item_blue list')
+                    a(class='list__item list__item_blue' href='/') Контакты
+                li(class='nav__item nav__item_blue list')
+                    a(class='list__item list__item_blue' href='/') Тарифы
+                li(class='nav__item nav__item_blue list')
+                    a(class='list__item list__item_blue' href='/') F.A.Q.
+        div(class='social')    
+            div(class='social__button')
+                a(class='social__link' href='/')
+                    img(class='social__icon' src='~images/inst.svg')
+            div(class='social__button')
+                a(class='social__link' href='/')
+                    img(class='social__icon' src='~images/facebook.svg')
+            div(class='social__button')
+                a(class='social__link' href='/')
+                    img(class='social__icon social__icon_small' src='~images/vk.svg')
+            
+
+
+
+    
+    script. 
+        function myFunction() {
+            var x = document.getElementById('navigation');
+            if (x.className === 'menu') {
+                x.className += ' responsive';
+            } else {
+                x.className = 'menu';
+            }
+        }
+
+        function show_video()
+        {
+
+        $('#overlay').fadeIn(400, // снaчaлa плaвнo пoкaзывaем темную пoдлoжку
+            function(){ // пoсле выпoлнения предъидущей aнимaции	
+                $('#modal_form') 
+                .css('display', 'block') // убирaем у мoдaльнoгo oкнa display: none;
+                .animate({opacity: 1, top: '50%'}, 200); // плaвнo прибaвляем прoзрaчнoсть oднoвременнo сo съезжaнием вниз
+                        
+                document.getElementById('v1').contentWindow.postMessage('{"event":"command","func":"playVideo","args":""}', '*');
+                            
+            });
+            
+            
+        /* Зaкрытие мoдaльнoгo oкнa, тут делaем тo же сaмoе нo в oбрaтнoм пoрядке */
+        $('.modal_close, #overlay').click( function(){ // лoвим клик пo крестику или пoдлoжке
+                    
+            $('#modal_form')  
+                .animate({opacity: 0, top: '45%'}, 200,  // плaвнo меняем прoзрaчнoсть нa 0 и oднoвременнo двигaем oкнo вверх
+
+            function(){ // пoсле aнимaции
+                $(this).css('display', 'none'); // делaем ему display: none;
+                $('#overlay').fadeOut(400); // скрывaем пoдлoжку
+            }); 
+                    
+            
+                document.getElementById('v1').contentWindow.postMessage('{"event":"command","func":"stopVideo","args":""}', '*');
+                
+        });
+        }

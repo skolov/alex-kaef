@@ -1,4 +1,3 @@
 @use 'mixins' as mixins;
 @use 'assets/fonts/OpenSans/use' as OpenSans;
-
 @include mixins.useFont(OpenSans.$description);

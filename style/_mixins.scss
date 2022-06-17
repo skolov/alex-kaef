@@ -1,20 +1,11 @@
-$extension: (
-    'eot': 'embedded-opentype',
-    'otf': 'opentype',
-    'woff': 'woff',
-    'woff2': 'woff2',
-    'ttf': 'truetype',
-);
-
+$extension: ( 'eot': 'embedded-opentype', 'otf': 'opentype', 'woff': 'woff', 'woff2': 'woff2', 'ttf': 'truetype', );
 @mixin useFont($fontObject) {
     $family: map-get($fontObject, 'family');
     $ext: map-get($fontObject, 'ext');
-
     @each $fonts in map-get($fontObject, 'fonts') {
         $path: map-get($fontObject, 'folder') + map-get($fonts, 'path') + '.';
         $weight: map-get($fonts, 'weight');
         $style: map-get($fonts, 'style');
-
         @font-face {
             //noinspection CssUnknownProperty
             font: {
